@@ -1,0 +1,137 @@
+name: WatchdogReport
+version: 2.0
+main: me.herex.watchdogreport.WatchdogReport
+api-version: 1.8
+description: Advanced Hypixel-style moderation and reporting system
+author: herex
+website: https://farepixel.fun
+
+commands:
+  report:
+    description: Report a player for rule violations
+    usage: /report <player>
+
+  watchdogreport-accept:
+    description: Accept a pending report
+    usage: /watchdogreport-accept <reporter> <reported>
+    permission: watchdog.staff
+    permission-message: "&cYou need to be staff or higher!"
+
+  watchdoglist:
+    description: View pending reports
+    usage: /watchdoglist
+    permission: watchdog.staff
+    permission-message: "&cYou don't have permission to view reports!"
+
+  ban:
+    description: Permanently ban a player
+    usage: /ban (-s) [Name] [Reason/@Layout]
+    permission: watchdog.ban
+    permission-message: "&cYou don't have permission for that!"
+
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]
+    permission: watchdog.tempban
+    permission-message: "&cYou don't have permission for that!"
+
+  mute:
+    description: Permanently mute a player
+    usage: /mute (-s) [Name] [Reason/@Layout]
+    permission: watchdog.mute
+    permission-message: "&cYou don't have permission for that!"
+
+  tempmute:
+    description: Temporarily mute a player
+    usage: /tempmute (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]
+    permission: watchdog.tempmute
+    permission-message: "&cYou don't have permission for that!"
+
+  warn:
+    description: Warn a player
+    usage: /warn (-s) [Name] [Reason/@Layout]
+    permission: watchdog.warn
+    permission-message: "&cYou don't have permission for that!"
+
+  kick:
+    description: Kick a player
+    usage: /kick (-s) [Name] [Reason/@Layout]
+    permission: watchdog.kick
+    permission-message: "&cYou don't have permission for that!"
+
+  unban:
+    description: Unban a player
+    usage: /unban [Name/IP]
+    permission: watchdog.unban
+    permission-message: "&cYou don't have permission for that!"
+
+  unmute:
+    description: Unmute a player
+    usage: /unmute [Name]
+    permission: watchdog.unmute
+    permission-message: "&cYou don't have permission for that!"
+
+  history:
+    description: View player punishment history
+    usage: /history [Name/IP] <Page>
+    permission: watchdog.history
+    permission-message: "&cYou don't have permission for that!"
+
+permissions:
+  watchdog.admin:
+    description: Full access to all watchdog commands
+    default: op
+    children:
+      watchdog.staff: true
+      watchdog.ban: true
+      watchdog.tempban: true
+      watchdog.mute: true
+      watchdog.tempmute: true
+      watchdog.warn: true
+      watchdog.kick: true
+      watchdog.unban: true
+      watchdog.unmute: true
+      watchdog.history: true
+
+  watchdog.staff:
+    description: Staff permissions for moderation
+    default: op
+    children:
+      watchdog.watchdogreport-accept: true
+      watchdog.watchdoglist: true
+
+  watchdog.ban:
+    description: Allows permanent bans
+    default: op
+
+  watchdog.tempban:
+    description: Allows temporary bans
+    default: op
+
+  watchdog.mute:
+    description: Allows permanent mutes
+    default: op
+
+  watchdog.tempmute:
+    description: Allows temporary mutes
+    default: op
+
+  watchdog.warn:
+    description: Allows warning players
+    default: op
+
+  watchdog.kick:
+    description: Allows kicking players
+    default: op
+
+  watchdog.unban:
+    description: Allows unbanning players
+    default: op
+
+  watchdog.unmute:
+    description: Allows unmuting players
+    default: op
+
+  watchdog.history:
+    description: Allows viewing punishment history
+    default: op

@@ -1,0 +1,47 @@
+# Configuration
+database:
+  type: "sqlite"
+  
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "watchdog_db"
+    username: "root"
+    password: ""
+    useSSL: false
+    allowPublicKeyRetrieval: true
+    serverTimezone: "UTC"
+
+  sqlite:
+    filename: "watchdog.db"
+
+server:
+  name: "YourServer"
+  website: "https://farepixel.fun"
+  appeal-link: "https://www.farepixel.fun/appeal"
+  report-link: "https://farepixel.net/report"
+  
+  # Worlds where plugin works (empty for all worlds)
+  enabled-worlds: []
+
+announcements:
+  enabled: true
+  interval-ticks: 36000
+
+# Report system settings
+reports:
+  cooldown-seconds: 60
+  notify-staff: true
+  staff-permission: "watchdog.staff"
+  require-website-report: false
+
+  # Valid report reasons
+  valid-reasons:
+    - "Chat Abuse"
+    - "Cheating (Hacks)"
+    - "Bad Name"
+    - "Bad Skin"
+    - "Other"
+    - "Bug Abuse"
+    - "Bad Pet name"
+    - "Boosting / Exploits"
