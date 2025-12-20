@@ -8,8 +8,11 @@ This plugin is a Remake of Hypixel Report System.
 - Punishements commands ✔
 - Like Hypixel ✔
 
-## Compatibility
+## Compatibility:
 ![bukkit](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/bukkit_vector.svg) ![spigot](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg) ![paper](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/paper_vector.svg)
+
+## Support:
+- [Discord](https://discord.gg/BuBsMEV8HB)
 
 ## Pictures:
 ![LOG](https://i.imgur.com/XBtZI5N.png)
