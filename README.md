@@ -9,5 +9,8 @@ This plugin is a Remake of Hypixel Report System.
 - Like Hypixel ✔
 
 ## Pictures:
-![LOG]()
-![LOG]()
+![LOG](https://i.imgur.com/XBtZI5N.png)
+![LOG](https://i.imgur.com/I6ik7sn.png)
+
+# Availble Commands:
+![LOG](https://i.imgur.com/Z8OD6oy.png)
