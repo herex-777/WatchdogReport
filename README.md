@@ -18,5 +18,5 @@ This plugin is a Remake of Hypixel Report System.
 ![LOG](https://i.imgur.com/XBtZI5N.png)
 ![LOG](https://i.imgur.com/I6ik7sn.png)
 
-# Availble Commands:
+## Availble Commands:
 ![LOG](https://i.imgur.com/Z8OD6oy.png)
